@@ -1,46 +1,57 @@
-# Redux Essentials Tutorial Example
+# Redux Doc Social Media
 
-This project contains the setup and code from the "Redux Essentials" tutorial in the Redux docs ( https://redux.js.org/tutorials/essentials/part-1-overview-concepts ).
+A sample social media implemented with Redux Toolkit.
 
-The `master` branch has a single commit that already has the initial project configuration in place. You can use this to follow along with the instructions from the tutorial.
+>Redux Toolkit is a set of tools that helps simplify Redux development. It includes utilities for creating and managing Redux stores, as well as for writing Redux actions and reducers. The Redux team recommends using Redux Toolkit anytime you need to use Redux.
 
-The `tutorial-steps` branch has the actual code commits from the tutorial. You can look at these to see how the official tutorial actually implements each piece of functionality along the way.
+This app is created while studying [Redux Toolkit Essentials](https://redux.js.org/tutorials/essentials/part-1-overview-concepts).
+The purpose of developing this app was to learning Redux concepts such as:
+- Redusers
+- Actions
+- Slices
+- Async Thunk
+- Entity Adapter
+- Selectors
+- React Redux Hooks (useSelector, useDispatch)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## What application does
+- Fetch fake data of posts from an api
+- Add new post to slice from user input
+- Fetch users and it's relationship with posts
+- Add reaction to each post
+- Get list of posts by a specific user
+- Routing and navigation between posts, users, post detail and notifications
 
-> **Note**: If you are using Node 17, this project may not start correctly due to a known issue with Webpack and Node's OpenSSL changes, which causes an error message containing `ERR_OSSL_EVP_UNSUPPORTED`.  
-> You can work around this by setting a `NODE_OPTIONS=--openssl-legacy-provider` environment variable before starting the dev server.
-> Details: https://github.com/webpack/webpack/issues/14532#issuecomment-947012063
+## Overview
 
-## Available Scripts
+![screenshot](./assets/screenshots/screenshot-01.png)
+<p align="center" style="margin-bottom: 2rem;">Topbar and add post form</p>
 
-In the project directory, you can run:
 
-### `yarn start`
+![screenshot](./assets/screenshots/screenshot-02.png)
+<p align="center" style="margin-bottom: 2rem;">Lists of posts and reactions assigned to them</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![screenshot](./assets/screenshots/screenshot-03.png)
+<p align="center" style="margin-bottom: 2rem;">Lists of users</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![screenshot](./assets/screenshots/screenshot-04.png)
+<p align="center" style="margin-bottom: 2rem;">Lists of posts by a single user</p>
 
-### `yarn test`
+![screenshot](./assets/screenshots/screenshot-05.png)
+<p align="center" style="margin-bottom: 2rem;">Post Details Page</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Installation
+```
+# copy the project to your local machine
+git clone https://github.com/alborzasd
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# change directory of terminal to the project
+cd redux-doc-social-media
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# start development server
+npm start
+```
