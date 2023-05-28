@@ -44,7 +44,7 @@ The purpose of developing this app was to learning Redux concepts such as:
 ## Installation
 ```
 # copy the project to your local machine
-git clone https://github.com/alborzasd
+git clone https://github.com/alborzasd/redux-doc-social-media
 
 # change directory of terminal to the project
 cd redux-doc-social-media
